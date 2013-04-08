@@ -7,7 +7,7 @@
 //
 
 #import "FBCDAppDelegate.h"
-
+#import "iSpeechSDK.h"
 #import "FBCDViewController.h"
 
 @implementation FBCDAppDelegate
@@ -24,6 +24,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[iSpeechSDK sharedSDK] setAPIKey:@"ea195dc9b45d1c8edc69494f6ea140ec"];
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[FBCDViewController alloc] initWithNibName:@"FBCDViewController" bundle:nil] autorelease];

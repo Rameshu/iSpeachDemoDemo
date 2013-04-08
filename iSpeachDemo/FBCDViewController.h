@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ISSpeechSynthesis.h"
 
-@interface FBCDViewController : UIViewController
+@interface FBCDViewController : UIViewController<UITextFieldDelegate,ISSpeechSynthesisDelegate>
+
 
 @end

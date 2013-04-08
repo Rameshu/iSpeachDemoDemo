@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A868AF915ECCD1900695502 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A868AF815ECCD1900695502 /* AVFoundation.framework */; };
 		2AD1F2ED15E632BB00234095 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD1F2EC15E632BB00234095 /* UIKit.framework */; };
 		2AD1F2EF15E632BB00234095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD1F2EE15E632BB00234095 /* Foundation.framework */; };
 		2AD1F2F115E632BB00234095 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD1F2F015E632BB00234095 /* CoreGraphics.framework */; };
@@ -15,22 +16,41 @@
 		2AD1F2FD15E632BB00234095 /* FBCDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD1F2FC15E632BB00234095 /* FBCDAppDelegate.m */; };
 		2AD1F30015E632BB00234095 /* FBCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD1F2FF15E632BB00234095 /* FBCDViewController.m */; };
 		2AD1F30315E632BB00234095 /* FBCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AD1F30115E632BB00234095 /* FBCDViewController.xib */; };
+		2AD1F30A15E632E700234095 /* libiSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD1F30915E632E700234095 /* libiSpeechSDK.a */; };
+		2AD1F31315E6332C00234095 /* iSpeechSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AD1F31215E6332C00234095 /* iSpeechSDK.bundle */; };
+		2AD1F31515E6335200234095 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD1F31415E6335200234095 /* AudioToolbox.framework */; };
+		2AD1F31715E6335B00234095 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD1F31615E6335B00234095 /* SystemConfiguration.framework */; };
+		2AD1F31915E6336500234095 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD1F31815E6336500234095 /* CFNetwork.framework */; };
+		2AD1F31B15E6337800234095 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD1F31A15E6337800234095 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A868AF815ECCD1900695502 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2AD1F2E815E632BB00234095 /* iSpeachDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSpeachDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD1F2EC15E632BB00234095 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2AD1F2EE15E632BB00234095 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2AD1F2F015E632BB00234095 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2AD1F2F415E632BB00234095 /* iSpeachDemo-Info.plist */ = {isa = PBXFileReference; path = "iSpeachDemo-Info.plist"; sourceTree = "<group>"; };
+		2AD1F2F415E632BB00234095 /* iSpeachDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSpeachDemo-Info.plist"; sourceTree = "<group>"; };
 		2AD1F2F615E632BB00234095 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AD1F2F815E632BB00234095 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2AD1F2FA15E632BB00234095 /* iSpeachDemo-Prefix.pch */ = {isa = PBXFileReference; path = "iSpeachDemo-Prefix.pch"; sourceTree = "<group>"; };
-		2AD1F2FB15E632BB00234095 /* FBCDAppDelegate.h */ = {isa = PBXFileReference; path = FBCDAppDelegate.h; sourceTree = "<group>"; };
+		2AD1F2FA15E632BB00234095 /* iSpeachDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSpeachDemo-Prefix.pch"; sourceTree = "<group>"; };
+		2AD1F2FB15E632BB00234095 /* FBCDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBCDAppDelegate.h; sourceTree = "<group>"; };
 		2AD1F2FC15E632BB00234095 /* FBCDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCDAppDelegate.m; sourceTree = "<group>"; };
-		2AD1F2FE15E632BB00234095 /* FBCDViewController.h */ = {isa = PBXFileReference; path = FBCDViewController.h; sourceTree = "<group>"; };
+		2AD1F2FE15E632BB00234095 /* FBCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBCDViewController.h; sourceTree = "<group>"; };
 		2AD1F2FF15E632BB00234095 /* FBCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCDViewController.m; sourceTree = "<group>"; };
 		2AD1F30215E632BB00234095 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FBCDViewController.xib; sourceTree = "<group>"; };
+		2AD1F30915E632E700234095 /* libiSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiSpeechSDK.a; sourceTree = "<group>"; };
+		2AD1F30C15E6330A00234095 /* iSpeechSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSpeechSDK.h; sourceTree = "<group>"; };
+		2AD1F30D15E6330A00234095 /* ISSpeechRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognition.h; sourceTree = "<group>"; };
+		2AD1F30E15E6330A00234095 /* ISSpeechRecognitionLocales.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognitionLocales.h; sourceTree = "<group>"; };
+		2AD1F30F15E6330A00234095 /* ISSpeechRecognitionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognitionResult.h; sourceTree = "<group>"; };
+		2AD1F31015E6330A00234095 /* ISSpeechSynthesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechSynthesis.h; sourceTree = "<group>"; };
+		2AD1F31115E6330A00234095 /* ISSpeechSynthesisVoices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechSynthesisVoices.h; sourceTree = "<group>"; };
+		2AD1F31215E6332C00234095 /* iSpeechSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iSpeechSDK.bundle; sourceTree = "<group>"; };
+		2AD1F31415E6335200234095 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2AD1F31615E6335B00234095 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2AD1F31815E6336500234095 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2AD1F31A15E6337800234095 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +58,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A868AF915ECCD1900695502 /* AVFoundation.framework in Frameworks */,
+				2AD1F31515E6335200234095 /* AudioToolbox.framework in Frameworks */,
+				2AD1F31B15E6337800234095 /* Security.framework in Frameworks */,
+				2AD1F31915E6336500234095 /* CFNetwork.framework in Frameworks */,
+				2AD1F31715E6335B00234095 /* SystemConfiguration.framework in Frameworks */,
 				2AD1F2ED15E632BB00234095 /* UIKit.framework in Frameworks */,
 				2AD1F2EF15E632BB00234095 /* Foundation.framework in Frameworks */,
 				2AD1F2F115E632BB00234095 /* CoreGraphics.framework in Frameworks */,
+				2AD1F30A15E632E700234095 /* libiSpeechSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +76,7 @@
 		2AD1F2DD15E632BA00234095 = {
 			isa = PBXGroup;
 			children = (
+				2A868AF815ECCD1900695502 /* AVFoundation.framework */,
 				2AD1F2F215E632BB00234095 /* iSpeachDemo */,
 				2AD1F2EB15E632BB00234095 /* Frameworks */,
 				2AD1F2E915E632BB00234095 /* Products */,
@@ -67,6 +94,11 @@
 		2AD1F2EB15E632BB00234095 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AD1F31A15E6337800234095 /* Security.framework */,
+				2AD1F31815E6336500234095 /* CFNetwork.framework */,
+				2AD1F31615E6335B00234095 /* SystemConfiguration.framework */,
+				2AD1F31415E6335200234095 /* AudioToolbox.framework */,
+				2AD1F30915E632E700234095 /* libiSpeechSDK.a */,
 				2AD1F2EC15E632BB00234095 /* UIKit.framework */,
 				2AD1F2EE15E632BB00234095 /* Foundation.framework */,
 				2AD1F2F015E632BB00234095 /* CoreGraphics.framework */,
@@ -77,6 +109,7 @@
 		2AD1F2F215E632BB00234095 /* iSpeachDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2AD1F30B15E6330A00234095 /* Headers */,
 				2AD1F2FB15E632BB00234095 /* FBCDAppDelegate.h */,
 				2AD1F2FC15E632BB00234095 /* FBCDAppDelegate.m */,
 				2AD1F2FE15E632BB00234095 /* FBCDViewController.h */,
@@ -90,12 +123,26 @@
 		2AD1F2F315E632BB00234095 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AD1F31215E6332C00234095 /* iSpeechSDK.bundle */,
 				2AD1F2F415E632BB00234095 /* iSpeachDemo-Info.plist */,
 				2AD1F2F515E632BB00234095 /* InfoPlist.strings */,
 				2AD1F2F815E632BB00234095 /* main.m */,
 				2AD1F2FA15E632BB00234095 /* iSpeachDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AD1F30B15E6330A00234095 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2AD1F30C15E6330A00234095 /* iSpeechSDK.h */,
+				2AD1F30D15E6330A00234095 /* ISSpeechRecognition.h */,
+				2AD1F30E15E6330A00234095 /* ISSpeechRecognitionLocales.h */,
+				2AD1F30F15E6330A00234095 /* ISSpeechRecognitionResult.h */,
+				2AD1F31015E6330A00234095 /* ISSpeechSynthesis.h */,
+				2AD1F31115E6330A00234095 /* ISSpeechSynthesisVoices.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +197,7 @@
 			files = (
 				2AD1F2F715E632BB00234095 /* InfoPlist.strings in Resources */,
 				2AD1F30315E632BB00234095 /* FBCDViewController.xib in Resources */,
+				2AD1F31315E6332C00234095 /* iSpeechSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +285,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iSpeachDemo/iSpeachDemo-Prefix.pch";
 				INFOPLIST_FILE = "iSpeachDemo/iSpeachDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -248,6 +301,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iSpeachDemo/iSpeachDemo-Prefix.pch";
 				INFOPLIST_FILE = "iSpeachDemo/iSpeachDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,6 +330,7 @@
 				2AD1F30815E632BB00234095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
